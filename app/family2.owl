@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY family_example "http://dl-ugm.com/family_example#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://dl-ugm.com/family_example#"
+     xml:base="http://dl-ugm.com/family_example"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:family_example="http://dl-ugm.com/family_example#">
+    <owl:Ontology rdf:about="http://dl-ugm.com/family_example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dl-ugm.com/family_example#hasChild -->
+
+    <owl:ObjectProperty rdf:about="&family_example;hasChild"/>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#hasParent -->
+
+    <owl:ObjectProperty rdf:about="&family_example;hasParent"/>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="&family_example;hasSpouse"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dl-ugm.com/family_example#birth_date -->
+
+    <owl:DatatypeProperty rdf:about="&family_example;birth_date"/>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#death_date -->
+
+    <owl:DatatypeProperty rdf:about="&family_example;death_date"/>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#name -->
+
+    <owl:DatatypeProperty rdf:about="&family_example;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Female -->
+
+    <owl:Class rdf:about="&family_example;Female">
+        <rdfs:subClassOf rdf:resource="&family_example;Gender"/>
+        <owl:disjointWith rdf:resource="&family_example;Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Gender -->
+
+    <owl:Class rdf:about="&family_example;Gender"/>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Male -->
+
+    <owl:Class rdf:about="&family_example;Male">
+        <rdfs:subClassOf rdf:resource="&family_example;Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Person -->
+
+    <owl:Class rdf:about="&family_example;Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Anne -->
+
+    <owl:NamedIndividual rdf:about="&family_example;Anne">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <name>Anne H.</name>
+        <hasChild rdf:resource="&family_example;Bob"/>
+        <hasSpouse rdf:resource="&family_example;Jon"/>
+        <hasChild rdf:resource="&family_example;Scott"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Bob -->
+
+    <owl:NamedIndividual rdf:about="&family_example;Bob">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <name>Bob Marley</name>
+        <hasParent rdf:resource="&family_example;Anne"/>
+        <hasParent rdf:resource="&family_example;Jon"/>
+        <hasSpouse rdf:resource="&family_example;Sherly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Jon -->
+
+    <owl:NamedIndividual rdf:about="&family_example;Jon">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <name>Jon Doe</name>
+        <hasSpouse rdf:resource="&family_example;Anne"/>
+        <hasChild rdf:resource="&family_example;Bob"/>
+        <hasChild rdf:resource="&family_example;Scott"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Scott -->
+
+    <owl:NamedIndividual rdf:about="&family_example;Scott">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <name>Scott L</name>
+        <hasParent rdf:resource="&family_example;Anne"/>
+        <hasParent rdf:resource="&family_example;Jon"/>
+        <hasSpouse rdf:resource="&family_example;Sue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Sherly -->
+
+    <owl:NamedIndividual rdf:about="&family_example;Sherly">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;Bob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#Sue -->
+
+    <owl:NamedIndividual rdf:about="&family_example;Sue">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;Scott"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#female -->
+
+    <owl:NamedIndividual rdf:about="&family_example;female"/>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#male -->
+
+    <owl:NamedIndividual rdf:about="&family_example;male"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

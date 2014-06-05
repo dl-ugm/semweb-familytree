@@ -1,0 +1,26 @@
+{
+  "name": "semweb-familytree",
+  "version": "0.0.1",
+  "description": "Semantic Web Assignment at UGM",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dl-ugm/semweb-familytree.git"
+  },
+  "keywords": [
+    "semantic web"
+  ],
+  "author": "Rijalul Fikri",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-concat": "~2.2.0",
+    "gulp-jshint": "~1.5.5",
+    "gulp-coffee": "~1.4.2",
+    "gulp-rename": "~1.2.0",
+    "gulp-ruby-sass": "~0.4.3",
+    "gulp-uglify": "~0.2.1",
+    "gulp-include": "~0.2.2"
+  }
+}

@@ -1,0 +1,65 @@
+@import 'bourbon/bourbon';
+@import 'bitters/bitters';
+@import 'neat/neat';
+@import '../packages/fontawesome/scss/font-awesome';
+
+body {
+	background: #333 url(../img/shattered-island.gif) repeat center top;
+	padding: 30px;
+}
+#container {
+	@include outer-container;
+	max-width: 80%;
+	background: #444 url(../img/brushed_alu_dark.png) repeat center top;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 25px rgba(0,0,0,.8);
+	overflow: hidden;
+	color: #FFF;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	h1 {
+		margin: -20px -20px 20px -20px;
+		padding: 20px;
+		border-radius: 5px 5px 0 0;
+		box-shadow: 0 3px 7px rgba(0,0,0,.5);
+		color: #FFF;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		@include background-image(linear-gradient( lighten(#444,30%), lighten(#444,10%) ));
+		small {
+			display: block;
+			font-style: oblique;
+		}
+	}
+}
+.btn-block {
+	width: 100%;
+}
+hr {
+	border: none;
+	border-top: 1px solid rgba(0,0,0,.5);
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	margin: 20px -20px;
+}
+table {
+	border-collapse: collapse;
+	border: 1px solid #999;
+	color: #444;
+	th {
+		color: #FFF;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		text-align: center;
+		@include background-image(linear-gradient( lighten(#444,30%), lighten(#444,10%) ));
+	}
+	td {
+		background: #FFF;
+	}
+	td,th {
+		padding: 5px 7px;
+		word-break: break-word;
+	}
+	tr:nth-child(2n+1) {
+		td {
+			background: lighten(#444,80%);
+		}
+	}
+}
