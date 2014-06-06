@@ -2,3 +2,8 @@
 node_modules
 app/assets/packages
 vendor
+*.idn
+*.jrnl
+*.dat
+*.IDN
+*.DAT

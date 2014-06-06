@@ -29,42 +29,46 @@ require 'vendor/autoload.php';
     EasyRdf_Namespace::set('dbpedia', 'http://dbpedia.org/resource/');
     EasyRdf_Namespace::set('dbo', 'http://dbpedia.org/ontology/');
     EasyRdf_Namespace::set('dbp', 'http://dbpedia.org/property/');
-    EasyRdf_Namespace::set('f', 'http://dl-ugm.com/family_example/');
+    EasyRdf_Namespace::set('f', 'http://dl-ugm.com/family_example#');
 
-    $sparql = new EasyRdf_Sparql_Client('http://dbpedia.org/sparql');
-    // $sparql = new EasyRdf_Sparql_Client('http://localhost:8080/openrdf-sesame/repositories/familyexample');
-    // $sparql = new EasyRdf_Sparql_Client('http://localhost:8000/family2.owl');
-?>
-<html>
-<head>
-  <title>EasyRdf Basic Sparql Example</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-</head>
-<body>
-<h1>EasyRdf Basic Sparql Example</h1>
-
-<h2>List of countries</h2>
-<ul>
-<?php
-    $result = $sparql->query(
-        'SELECT * WHERE {'.
-        '  ?country rdf:type dbo:Country .'.
-        '  ?country rdfs:label ?label .'.
-        '  ?country dc:subject category:Member_states_of_the_United_Nations .'.
-        '  FILTER ( lang(?label) = "en" )'.
-        '} ORDER BY ?label'
+    $sparql = new EasyRdf_Sparql_Client('http://localhost:3030/dataset/query');
+    $input = (isset($_POST['nama'])) ? $_POST['nama'] : 'bob';
+    $result = $sparql->query( // 'SELECT ?s ?ayah ?ibu ?spouse WHERE { ?s rdf:type f:Person . ?s f:name ?nama . ?ayah f:hasChild ?s . ?ayah rdf:type f:Male . ?ibu f:hasChild ?s . ?ibu rdf:type f:Female . ?s f:hasSpouse ?spouse . FILTER regex(?nama,"'.$input.'","i") }'
+        'SELECT ?s ?ayah ?ibu ?spouse '.
+        'WHERE {'.
+        '   ?s rdf:type f:Person .'.
+        '   ?ayah f:hasChild ?s .'.
+        '   ?ayah rdf:type f:Male .'.
+        '   ?ibu f:hasChild ?s .'.
+        '   ?ibu rdf:type f:Female .'.
+        '   ?s f:name ?nama .' .
+        // '   ?s f:hasSpouse ?spouse .' .
+        '   FILTER regex(?nama,"'.$input.'","i") .' .
+        '   OPTIONAL { ?s f:hasSpouse ?spouse . } '.
+        '}'
     );
-	// $result = $sparql->query('SELECT ?s ?p ?o WHERE { ?s rdf:type f:Person . ?s ?p ?o }');
-    // die(var_dump($result));
-    // foreach ($result as $row) {
-    //     echo "<li>".$row->s, $row->p."</li>\n";
-    // }
-    foreach ($result as $row) {
-        echo "<li>".$row->label.' - '.$row->country."</li>\n";
-    }
+    foreach($result as $row):
+        // echo $row->s.'-'.$row->p.'-'.$row->o.'<br>';
+        $ayah = $row->ayah;
+        $ibu = $row->ibu;
+        $spouse = $row->spouse;
+    endforeach;
 ?>
-</ul>
-<p>Total number of countries: <?= $result->numRows() ?></p>
-
-</body>
-</html>
+<table>
+    <tr>
+        <th colspan="2">Data detail for "<?php echo $input; ?>"</th>
+    </tr>
+    <tr>
+        <th>Nama Ayah</th>
+        <td><?php echo $ayah; ?></td>
+    </tr>
+    <tr>
+        <th>Nama Ibu</th>
+        <td><?php echo $ibu; ?></td>
+    </tr>
+    <tr>
+        <th>Nama Pasangan</th>
+        <td><?php echo $spouse; ?></td>
+    </tr>
+</table>
+<p>Total number of data: <?= $result->numRows() ?></p>
