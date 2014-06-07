@@ -39,7 +39,6 @@ require 'vendor/autoload.php';
         '   ?s rdf:type f:Person .'.
         '   ?s f:name ?nama .' .
         '   FILTER regex(?nama,"'.$input.'","i") .' .
-        '   FILTER regex(?s,"'.$input.'","i") .' .
         '   OPTIONAL { ?ayah f:hasChild ?s . ?ayah rdf:type f:Male . }'.
         '   OPTIONAL { ?ibu f:hasChild ?s . ?ibu rdf:type f:Female . }'.
         '   OPTIONAL { ?s f:hasSpouse ?spouse . } ' .
@@ -52,7 +51,7 @@ require 'vendor/autoload.php';
     $child = [];
     // die(var_dump('<pre>'.$result.'</pre>'));
     foreach($result as $row):
-        $nama   = $row->s;
+        $nama   = $row->nama;
         $ayah   = (isset($row->ayah)) ? $row->ayah : '?';
         $ibu    = (isset($row->ibu)) ? $row->ibu : '?';
         $spouse = (isset($row->spouse)) ? $row->spouse : '?';

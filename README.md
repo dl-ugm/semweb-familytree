@@ -33,7 +33,7 @@ We're using Jena Fuseki as the triple store. You can download it [here](http://j
 
 ### Starting Fuseki Server
 - Go to your Fuseki installation directory
-- Start a fuseki server with in-memory storage: $ ./fuseki-server --update --mem /dataset (the --update flag tells the server to accept SPARQL updates; the --mem flag tells the server to use in memory storage; the /dataset part is a name for the dataset.
+- Start a fuseki server with in-memory storage: `fuseki-server --update --mem /dataset` (the --update flag tells the server to accept SPARQL updates; the --mem flag tells the server to use in memory storage; the /dataset part is a name for the dataset.
 ![Fuseki Start](public/img/readme/fusekistart.jpg "Starting Fuseki")
 - Open a new browser window and visit the homepage of your Fuseki server at http://localhost:3030/
 - Click on Control Panel; you can upload your owl file using the control panel
@@ -42,3 +42,4 @@ We're using Jena Fuseki as the triple store. You can download it [here](http://j
 - Open a new terminal window and cd to this project directory
 - Type `php -S localhost:8000`
 - Open a new browser window and access http://localhost:8000
+![App Screenshot](public/img/readme/appscreenshot.jpg "Application Screenshot")

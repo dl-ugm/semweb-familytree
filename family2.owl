@@ -133,6 +133,7 @@
     <!-- http://dl-ugm.com/family_example#aini -->
 
     <owl:NamedIndividual rdf:about="&family_example;aini">
+	<name>Aini Zahra</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;aini"/>
@@ -145,6 +146,7 @@
     <!-- http://dl-ugm.com/family_example#alex -->
 
     <owl:NamedIndividual rdf:about="&family_example;alex">
+	<name>Alex</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -154,6 +156,7 @@
     <!-- http://dl-ugm.com/family_example#anas -->
 
     <owl:NamedIndividual rdf:about="&family_example;anas">
+	<name>Anas</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -165,6 +168,7 @@
     <owl:NamedIndividual rdf:about="&family_example;andi">
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
+        <name>Andi Malarangeng</name>
         <hasChild rdf:resource="&family_example;dian"/>
         <hasChild rdf:resource="&family_example;habibi"/>
         <hasSpouse rdf:resource="&family_example;sulvi"/>
@@ -176,6 +180,7 @@
     <!-- http://dl-ugm.com/family_example#anggi -->
 
     <owl:NamedIndividual rdf:about="&family_example;anggi">
+	<name>Anggi</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -185,6 +190,7 @@
     <!-- http://dl-ugm.com/family_example#bayu -->
 
     <owl:NamedIndividual rdf:about="&family_example;bayu">
+	<name>Bayu</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -194,12 +200,13 @@
     <!-- http://dl-ugm.com/family_example#boy -->
 
     <owl:NamedIndividual rdf:about="&family_example;boy">
+	<name>Boy</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;alex"/>
         <hasChild rdf:resource="&family_example;anggi"/>
         <hasChild rdf:resource="&family_example;novi"/>
-        <hasChild rdf:resource="&family_example;raisa"/>
+        <hasSpouse rdf:resource="&family_example;raisa"/>
     </owl:NamedIndividual>
     
 
@@ -207,6 +214,7 @@
     <!-- http://dl-ugm.com/family_example#dewi -->
 
     <owl:NamedIndividual rdf:about="&family_example;dewi">
+	<name>Dewi</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;didit"/>
@@ -219,6 +227,7 @@
     <!-- http://dl-ugm.com/family_example#dian -->
 
     <owl:NamedIndividual rdf:about="&family_example;dian">
+	<name>Dian</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -228,6 +237,7 @@
     <!-- http://dl-ugm.com/family_example#didit -->
 
     <owl:NamedIndividual rdf:about="&family_example;didit">
+	<name>Didit</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -237,6 +247,7 @@
     <!-- http://dl-ugm.com/family_example#dina -->
 
     <owl:NamedIndividual rdf:about="&family_example;dina">
+	<name>Dina</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;doni"/>
@@ -248,6 +259,7 @@
     <!-- http://dl-ugm.com/family_example#doni -->
 
     <owl:NamedIndividual rdf:about="&family_example;doni">
+	<name>Doni</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;dina"/>
@@ -259,6 +271,7 @@
     <!-- http://dl-ugm.com/family_example#fatonah -->
 
     <owl:NamedIndividual rdf:about="&family_example;fatonah">
+	<name>Fatonah</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;aini"/>
@@ -271,6 +284,7 @@
     <!-- http://dl-ugm.com/family_example#habibi -->
 
     <owl:NamedIndividual rdf:about="&family_example;habibi">
+	<name>Habibi</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -280,6 +294,7 @@
     <!-- http://dl-ugm.com/family_example#hasan -->
 
     <owl:NamedIndividual rdf:about="&family_example;hasan">
+	<name>Hasan</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;dewi"/>
@@ -292,6 +307,7 @@
     <!-- http://dl-ugm.com/family_example#jane -->
 
     <owl:NamedIndividual rdf:about="&family_example;jane">
+	<name>Jane</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;boy"/>
@@ -304,6 +320,7 @@
     <!-- http://dl-ugm.com/family_example#jeni -->
 
     <owl:NamedIndividual rdf:about="&family_example;jeni">
+	<name>Jeni</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;salim"/>
@@ -316,6 +333,7 @@
     <!-- http://dl-ugm.com/family_example#kartini -->
 
     <owl:NamedIndividual rdf:about="&family_example;kartini">
+	<name>Kartini</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;bayu"/>
@@ -328,6 +346,7 @@
     <!-- http://dl-ugm.com/family_example#kate -->
 
     <owl:NamedIndividual rdf:about="&family_example;kate">
+	<name>Kate</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;salim"/>
@@ -340,6 +359,7 @@
     <!-- http://dl-ugm.com/family_example#lutfi_hasan -->
 
     <owl:NamedIndividual rdf:about="&family_example;lutfi_hasan">
+	<name>Lutfi Hasan</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;roni"/>
@@ -352,6 +372,7 @@
     <!-- http://dl-ugm.com/family_example#novi -->
 
     <owl:NamedIndividual rdf:about="&family_example;novi">
+	<name>Novi</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -361,6 +382,7 @@
     <!-- http://dl-ugm.com/family_example#nurdin -->
 
     <owl:NamedIndividual rdf:about="&family_example;nurdin">
+	<name>Nurdin</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;zahrana"/>
@@ -371,6 +393,7 @@
     <!-- http://dl-ugm.com/family_example#pablo -->
 
     <owl:NamedIndividual rdf:about="&family_example;pablo">
+	<name>Pablo</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;boy"/>
@@ -383,6 +406,7 @@
     <!-- http://dl-ugm.com/family_example#raisa -->
 
     <owl:NamedIndividual rdf:about="&family_example;raisa">
+	<name>Raisa</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;alex"/>
@@ -396,6 +420,7 @@
     <!-- http://dl-ugm.com/family_example#roni -->
 
     <owl:NamedIndividual rdf:about="&family_example;roni">
+	<name>Roni</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -405,6 +430,7 @@
     <!-- http://dl-ugm.com/family_example#salim -->
 
     <owl:NamedIndividual rdf:about="&family_example;salim">
+	<name>Salim</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;jeni"/>
@@ -417,6 +443,7 @@
     <!-- http://dl-ugm.com/family_example#sardjito -->
 
     <owl:NamedIndividual rdf:about="&family_example;sardjito">
+	<name>Sardjito</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;bayu"/>
@@ -429,6 +456,7 @@
     <!-- http://dl-ugm.com/family_example#sidiq -->
 
     <owl:NamedIndividual rdf:about="&family_example;sidiq">
+	<name>Sidiq</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;dina"/>
@@ -441,6 +469,7 @@
     <!-- http://dl-ugm.com/family_example#siti -->
 
     <owl:NamedIndividual rdf:about="&family_example;siti">
+	<name>Siti</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;lutfi_hasan"/>
@@ -453,6 +482,7 @@
     <!-- http://dl-ugm.com/family_example#sulvi -->
 
     <owl:NamedIndividual rdf:about="&family_example;sulvi">
+	<name>Sulvi</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;andi"/>
@@ -466,6 +496,7 @@
     <!-- http://dl-ugm.com/family_example#umami -->
 
     <owl:NamedIndividual rdf:about="&family_example;umami">
+	<name>Umami</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasChild rdf:resource="&family_example;dina"/>
@@ -478,6 +509,7 @@
     <!-- http://dl-ugm.com/family_example#umar -->
 
     <owl:NamedIndividual rdf:about="&family_example;umar">
+	<name>Umar</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -487,6 +519,7 @@
     <!-- http://dl-ugm.com/family_example#william -->
 
     <owl:NamedIndividual rdf:about="&family_example;william">
+	<name>Wiliam</name>
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;kate"/>
@@ -499,6 +532,7 @@
     <!-- http://dl-ugm.com/family_example#yulia -->
 
     <owl:NamedIndividual rdf:about="&family_example;yulia">
+	<name>Yulia</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>
@@ -508,6 +542,7 @@
     <!-- http://dl-ugm.com/family_example#zahrana -->
 
     <owl:NamedIndividual rdf:about="&family_example;zahrana">
+	<name>Zahrana</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
         <hasSpouse rdf:resource="&family_example;nurdin"/>
@@ -518,6 +553,7 @@
     <!-- http://dl-ugm.com/family_example#zulfa -->
 
     <owl:NamedIndividual rdf:about="&family_example;zulfa">
+	<name>Zulfa</name>
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
     </owl:NamedIndividual>

@@ -72,7 +72,7 @@ table {
 }
 .tree ul {
 	padding-top: 20px; position: relative;
-	
+	margin-top: -7px;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -95,7 +95,7 @@ table {
 		.people {
 			display: inline-block;
 			border: 1px dotted #999;
-			padding: 3px 15px;
+			padding: 1px 7px;
 			border-radius: 5px;
 			&.active {
 				background: rgba(0,0,0,.2);
