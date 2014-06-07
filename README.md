@@ -18,6 +18,9 @@ If you have NodeJs already installed then use this [getting started](https://git
 
 `Gulp` is used to compile sass into css, and also to minify javascript. You can check the tasks by opening `gulpfile.js`. You can use gulp by typing `gulp` from the command line at the root of this application.
 
+### Ruby
+`Ruby` is used for the `sass` gem. If you have ruby already installed just type `gem install sass`. `Sass` is used to manage the css file of this project. Windows user can use [Ruby Installer](http://rubyinstaller.org/).
+
 ### Bower
 [Bower](http://bower.io/) is used to manage the assets needed for this project. Same as `Gulp` we'll also need `NodeJs` to install `Bower`. Just type `npm install -g bower` to install bower globally.
 
