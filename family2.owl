@@ -130,87 +130,397 @@
     
 
 
-    <!-- http://dl-ugm.com/family_example#Anne -->
+    <!-- http://dl-ugm.com/family_example#aini -->
 
-    <owl:NamedIndividual rdf:about="&family_example;Anne">
+    <owl:NamedIndividual rdf:about="&family_example;aini">
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
-        <name>Anne H.</name>
-        <hasChild rdf:resource="&family_example;Bob"/>
-        <hasSpouse rdf:resource="&family_example;Jon"/>
-        <hasChild rdf:resource="&family_example;Scott"/>
+        <hasSpouse rdf:resource="&family_example;aini"/>
+        <hasChild rdf:resource="&family_example;anas"/>
+        <hasChild rdf:resource="&family_example;lutfi_hasan"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#Bob -->
+    <!-- http://dl-ugm.com/family_example#alex -->
 
-    <owl:NamedIndividual rdf:about="&family_example;Bob">
+    <owl:NamedIndividual rdf:about="&family_example;alex">
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
-        <name>Bob Marley</name>
-        <hasParent rdf:resource="&family_example;Anne"/>
-        <hasParent rdf:resource="&family_example;Jon"/>
-        <hasSpouse rdf:resource="&family_example;Sherly"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#Jon -->
+    <!-- http://dl-ugm.com/family_example#anas -->
 
-    <owl:NamedIndividual rdf:about="&family_example;Jon">
+    <owl:NamedIndividual rdf:about="&family_example;anas">
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
-        <name>Jon Doe</name>
-        <hasSpouse rdf:resource="&family_example;Anne"/>
-        <hasChild rdf:resource="&family_example;Bob"/>
-        <hasChild rdf:resource="&family_example;Scott"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#Scott -->
+    <!-- http://dl-ugm.com/family_example#andi -->
 
-    <owl:NamedIndividual rdf:about="&family_example;Scott">
+    <owl:NamedIndividual rdf:about="&family_example;andi">
         <rdf:type rdf:resource="&family_example;Male"/>
         <rdf:type rdf:resource="&family_example;Person"/>
-        <name>Scott L</name>
-        <hasParent rdf:resource="&family_example;Anne"/>
-        <hasParent rdf:resource="&family_example;Jon"/>
-        <hasSpouse rdf:resource="&family_example;Sue"/>
+        <hasChild rdf:resource="&family_example;dian"/>
+        <hasChild rdf:resource="&family_example;habibi"/>
+        <hasSpouse rdf:resource="&family_example;sulvi"/>
+        <hasChild rdf:resource="&family_example;yulia"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#Sherly -->
+    <!-- http://dl-ugm.com/family_example#anggi -->
 
-    <owl:NamedIndividual rdf:about="&family_example;Sherly">
+    <owl:NamedIndividual rdf:about="&family_example;anggi">
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
-        <hasSpouse rdf:resource="&family_example;Bob"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#Sue -->
+    <!-- http://dl-ugm.com/family_example#bayu -->
 
-    <owl:NamedIndividual rdf:about="&family_example;Sue">
+    <owl:NamedIndividual rdf:about="&family_example;bayu">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#boy -->
+
+    <owl:NamedIndividual rdf:about="&family_example;boy">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;alex"/>
+        <hasChild rdf:resource="&family_example;anggi"/>
+        <hasChild rdf:resource="&family_example;novi"/>
+        <hasChild rdf:resource="&family_example;raisa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#dewi -->
+
+    <owl:NamedIndividual rdf:about="&family_example;dewi">
         <rdf:type rdf:resource="&family_example;Female"/>
         <rdf:type rdf:resource="&family_example;Person"/>
-        <hasSpouse rdf:resource="&family_example;Scott"/>
+        <hasChild rdf:resource="&family_example;didit"/>
+        <hasChild rdf:resource="&family_example;fatonah"/>
+        <hasSpouse rdf:resource="&family_example;hasan"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#female -->
+    <!-- http://dl-ugm.com/family_example#dian -->
 
-    <owl:NamedIndividual rdf:about="&family_example;female"/>
+    <owl:NamedIndividual rdf:about="&family_example;dian">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://dl-ugm.com/family_example#male -->
+    <!-- http://dl-ugm.com/family_example#didit -->
 
-    <owl:NamedIndividual rdf:about="&family_example;male"/>
+    <owl:NamedIndividual rdf:about="&family_example;didit">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#dina -->
+
+    <owl:NamedIndividual rdf:about="&family_example;dina">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;doni"/>
+        <hasChild rdf:resource="&family_example;sardjito"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#doni -->
+
+    <owl:NamedIndividual rdf:about="&family_example;doni">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;dina"/>
+        <hasChild rdf:resource="&family_example;sardjito"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#fatonah -->
+
+    <owl:NamedIndividual rdf:about="&family_example;fatonah">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;aini"/>
+        <hasChild rdf:resource="&family_example;anas"/>
+        <hasChild rdf:resource="&family_example;lutfi_hasan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#habibi -->
+
+    <owl:NamedIndividual rdf:about="&family_example;habibi">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#hasan -->
+
+    <owl:NamedIndividual rdf:about="&family_example;hasan">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;dewi"/>
+        <hasChild rdf:resource="&family_example;didit"/>
+        <hasChild rdf:resource="&family_example;fatonah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#jane -->
+
+    <owl:NamedIndividual rdf:about="&family_example;jane">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;boy"/>
+        <hasChild rdf:resource="&family_example;jeni"/>
+        <hasSpouse rdf:resource="&family_example;pablo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#jeni -->
+
+    <owl:NamedIndividual rdf:about="&family_example;jeni">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;salim"/>
+        <hasChild rdf:resource="&family_example;umar"/>
+        <hasChild rdf:resource="&family_example;zulfa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#kartini -->
+
+    <owl:NamedIndividual rdf:about="&family_example;kartini">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;bayu"/>
+        <hasSpouse rdf:resource="&family_example;sardjito"/>
+        <hasChild rdf:resource="&family_example;siti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#kate -->
+
+    <owl:NamedIndividual rdf:about="&family_example;kate">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;salim"/>
+        <hasChild rdf:resource="&family_example;sulvi"/>
+        <hasSpouse rdf:resource="&family_example;william"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#lutfi_hasan -->
+
+    <owl:NamedIndividual rdf:about="&family_example;lutfi_hasan">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;roni"/>
+        <hasSpouse rdf:resource="&family_example;siti"/>
+        <hasChild rdf:resource="&family_example;zahrana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#novi -->
+
+    <owl:NamedIndividual rdf:about="&family_example;novi">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#nurdin -->
+
+    <owl:NamedIndividual rdf:about="&family_example;nurdin">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;zahrana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#pablo -->
+
+    <owl:NamedIndividual rdf:about="&family_example;pablo">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;boy"/>
+        <hasSpouse rdf:resource="&family_example;jane"/>
+        <hasSpouse rdf:resource="&family_example;jeni"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#raisa -->
+
+    <owl:NamedIndividual rdf:about="&family_example;raisa">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;alex"/>
+        <hasChild rdf:resource="&family_example;anggi"/>
+        <hasSpouse rdf:resource="&family_example;boy"/>
+        <hasChild rdf:resource="&family_example;novi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#roni -->
+
+    <owl:NamedIndividual rdf:about="&family_example;roni">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#salim -->
+
+    <owl:NamedIndividual rdf:about="&family_example;salim">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;jeni"/>
+        <hasChild rdf:resource="&family_example;umar"/>
+        <hasChild rdf:resource="&family_example;zulfa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#sardjito -->
+
+    <owl:NamedIndividual rdf:about="&family_example;sardjito">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;bayu"/>
+        <hasSpouse rdf:resource="&family_example;kartini"/>
+        <hasChild rdf:resource="&family_example;siti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#sidiq -->
+
+    <owl:NamedIndividual rdf:about="&family_example;sidiq">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;dina"/>
+        <hasChild rdf:resource="&family_example;hasan"/>
+        <hasSpouse rdf:resource="&family_example;umami"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#siti -->
+
+    <owl:NamedIndividual rdf:about="&family_example;siti">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;lutfi_hasan"/>
+        <hasChild rdf:resource="&family_example;roni"/>
+        <hasChild rdf:resource="&family_example;zahrana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#sulvi -->
+
+    <owl:NamedIndividual rdf:about="&family_example;sulvi">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;andi"/>
+        <hasChild rdf:resource="&family_example;dian"/>
+        <hasChild rdf:resource="&family_example;habibi"/>
+        <hasChild rdf:resource="&family_example;yulia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#umami -->
+
+    <owl:NamedIndividual rdf:about="&family_example;umami">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasChild rdf:resource="&family_example;dina"/>
+        <hasChild rdf:resource="&family_example;hasan"/>
+        <hasSpouse rdf:resource="&family_example;sidiq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#umar -->
+
+    <owl:NamedIndividual rdf:about="&family_example;umar">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#william -->
+
+    <owl:NamedIndividual rdf:about="&family_example;william">
+        <rdf:type rdf:resource="&family_example;Male"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;kate"/>
+        <hasChild rdf:resource="&family_example;salim"/>
+        <hasChild rdf:resource="&family_example;sulvi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#yulia -->
+
+    <owl:NamedIndividual rdf:about="&family_example;yulia">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#zahrana -->
+
+    <owl:NamedIndividual rdf:about="&family_example;zahrana">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+        <hasSpouse rdf:resource="&family_example;nurdin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dl-ugm.com/family_example#zulfa -->
+
+    <owl:NamedIndividual rdf:about="&family_example;zulfa">
+        <rdf:type rdf:resource="&family_example;Female"/>
+        <rdf:type rdf:resource="&family_example;Person"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

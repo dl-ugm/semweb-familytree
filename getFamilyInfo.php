@@ -31,7 +31,7 @@ require 'vendor/autoload.php';
     EasyRdf_Namespace::set('dbp', 'http://dbpedia.org/property/');
     EasyRdf_Namespace::set('f', 'http://dl-ugm.com/family_example#');
 
-    $sparql = new EasyRdf_Sparql_Client('http://localhost:3030/Testing/query');
+    $sparql = new EasyRdf_Sparql_Client('http://localhost:3030/testing/query');
     $input = (isset($_POST['nama'])) ? $_POST['nama'] : 'bob';
     $result = $sparql->query(
         'SELECT ?nama ?ayah ?ibu ?spouse ?anak '.
@@ -39,6 +39,7 @@ require 'vendor/autoload.php';
         '   ?s rdf:type f:Person .'.
         '   ?s f:name ?nama .' .
         '   FILTER regex(?nama,"'.$input.'","i") .' .
+        '   FILTER regex(?s,"'.$input.'","i") .' .
         '   OPTIONAL { ?ayah f:hasChild ?s . ?ayah rdf:type f:Male . }'.
         '   OPTIONAL { ?ibu f:hasChild ?s . ?ibu rdf:type f:Female . }'.
         '   OPTIONAL { ?s f:hasSpouse ?spouse . } ' .
@@ -51,7 +52,7 @@ require 'vendor/autoload.php';
     $child = [];
     // die(var_dump('<pre>'.$result.'</pre>'));
     foreach($result as $row):
-        $nama   = $row->nama;
+        $nama   = $row->s;
         $ayah   = (isset($row->ayah)) ? $row->ayah : '?';
         $ibu    = (isset($row->ibu)) ? $row->ibu : '?';
         $spouse = (isset($row->spouse)) ? $row->spouse : '?';
@@ -76,11 +77,11 @@ require 'vendor/autoload.php';
         <td><?php echo $ibu; ?></td>
     </tr>
     <tr>
-        <th>Nama Pasangan</th>
+        <th>Nama Suami/Istri</th>
         <td><?php echo $spouse; ?></td>
     </tr>
 </table>
-<p>Total number of data: <?= $result->numRows() ?></p>
+<!-- <p>Total number of data: <?= $result->numRows() ?></p> -->
 
  <div class="tree">
     <ul>
