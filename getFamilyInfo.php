@@ -31,27 +31,36 @@ require 'vendor/autoload.php';
     EasyRdf_Namespace::set('dbp', 'http://dbpedia.org/property/');
     EasyRdf_Namespace::set('f', 'http://dl-ugm.com/family_example#');
 
-    $sparql = new EasyRdf_Sparql_Client('http://localhost:3030/dataset/query');
+    $sparql = new EasyRdf_Sparql_Client('http://localhost:3030/Testing/query');
     $input = (isset($_POST['nama'])) ? $_POST['nama'] : 'bob';
-    $result = $sparql->query( // 'SELECT ?s ?ayah ?ibu ?spouse WHERE { ?s rdf:type f:Person . ?s f:name ?nama . ?ayah f:hasChild ?s . ?ayah rdf:type f:Male . ?ibu f:hasChild ?s . ?ibu rdf:type f:Female . ?s f:hasSpouse ?spouse . FILTER regex(?nama,"'.$input.'","i") }'
-        'SELECT ?s ?ayah ?ibu ?spouse '.
+    $result = $sparql->query(
+        'SELECT ?nama ?ayah ?ibu ?spouse ?anak '.
         'WHERE {'.
         '   ?s rdf:type f:Person .'.
-        '   ?ayah f:hasChild ?s .'.
-        '   ?ayah rdf:type f:Male .'.
-        '   ?ibu f:hasChild ?s .'.
-        '   ?ibu rdf:type f:Female .'.
         '   ?s f:name ?nama .' .
-        // '   ?s f:hasSpouse ?spouse .' .
         '   FILTER regex(?nama,"'.$input.'","i") .' .
-        '   OPTIONAL { ?s f:hasSpouse ?spouse . } '.
+        '   OPTIONAL { ?ayah f:hasChild ?s . ?ayah rdf:type f:Male . }'.
+        '   OPTIONAL { ?ibu f:hasChild ?s . ?ibu rdf:type f:Female . }'.
+        '   OPTIONAL { ?s f:hasSpouse ?spouse . } ' .
+        '   OPTIONAL { ?s f:hasChild ?anak . } ' .
         '}'
     );
+    function clean($str){
+        return str_replace('http://dl-ugm.com/family_example#', '', $str);
+    }
+    $child = [];
+    // die(var_dump('<pre>'.$result.'</pre>'));
     foreach($result as $row):
-        // echo $row->s.'-'.$row->p.'-'.$row->o.'<br>';
-        $ayah = $row->ayah;
-        $ibu = $row->ibu;
-        $spouse = $row->spouse;
+        $nama   = $row->nama;
+        $ayah   = (isset($row->ayah)) ? $row->ayah : '?';
+        $ibu    = (isset($row->ibu)) ? $row->ibu : '?';
+        $spouse = (isset($row->spouse)) ? $row->spouse : '?';
+        $ayah   = clean($ayah);
+        $ibu    = clean($ibu);
+        $spouse = clean($spouse);
+        if(isset($row->anak)):
+            $child[] = clean($row->anak);
+        endif;
     endforeach;
 ?>
 <table>
@@ -72,3 +81,37 @@ require 'vendor/autoload.php';
     </tr>
 </table>
 <p>Total number of data: <?= $result->numRows() ?></p>
+
+ <div class="tree">
+    <ul>
+        <li>
+            <a href="#">
+                <div class="people">
+                    <?php echo (isset($ayah)) ? $ayah : '?'; ?>
+                </div>
+                <div class="people">
+                    <?php echo (isset($ibu)) ? $ibu : '?'; ?>
+                </div>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="people active">
+                            <?php echo $nama; ?>
+                        </div>
+                        <div class="people">
+                            <?php echo (isset($spouse)) ? $spouse : '?'; ?>
+                        </div>
+                    </a>
+                    <?php if(count($child)>0): ?>
+                        <ul>
+                            <?php foreach($child as $a): ?>
+                                <li><a href="#"><?php echo $a; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
